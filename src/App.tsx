@@ -6,13 +6,14 @@ import Timer from "./redux/Timer";
 import MainPage from "./MainPage";
 import './app.css'
 import Page from "./Page";
+import TicTacToe from "./tictactoe/TicTacToe";
 
 
 const Header = () => {
     return(
         <div className={'Header'}>
             <Link to='/'>
-                <h1> SHOPING MALL</h1>
+                <h1> REACT TEST SITE </h1>
             </Link>
 
         </div>
@@ -22,10 +23,10 @@ const Header = () => {
 const Footer = () => {
     return(
         <div>
-            <h1> LOGO IMAGE </h1>
-            <p>회사명: (주)너와나의농촌 / 주소: 서울시 관악구 남부순환로 1427, 3층
-                E-mail: youandifarm@naver.com / tel_070-7574-4871 / fax_0504-570-4871
-                COPYRIGHT(C) 2015 BY (주)너와나의농촌. ALL RIGHTS RESERVED.</p>
+            <h1> REACT TEST </h1>
+            <p> react test react test react test react test react test react test react test react test
+                react test react test react test react test react test react test react test react test
+                react test react test react test react test react test react test react test react test</p>
         </div>
     )
 }
@@ -41,6 +42,7 @@ const App = () => {
                 <Route path="/" element={<Page><MainPage/></Page>}/>
                 <Route path="/Counter" element={<Page><Counter/></Page>}/>
                 <Route path="/Timer" element={<Page><Timer/></Page>}/>
+                <Route path="/TicTacToe" element={<Page><TicTacToe/></Page>}/>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
             <hr/>
