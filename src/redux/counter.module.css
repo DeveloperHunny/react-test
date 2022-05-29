@@ -1,0 +1,23 @@
+:root{
+    --color-primary : #2c92db;
+
+    --space-xsmall : 8px;
+    --space-small : 12px;
+    --space-normal : 16px;
+    --space-large : 24px;
+    --space-xlarge : 32px;
+
+    --font-size-small : 16px;
+    --font-size-normal : 24px;
+    --font-size-large : 32px;
+}
+
+.btnStyle{
+    padding: var(--space-small);
+    border-width: 0;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    font-size: var(--font-size-normal);
+    color: white;
+
+}
