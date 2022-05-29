@@ -7,15 +7,15 @@ const Counter = () => {
     const dispatch = useDispatch();
 
     return(
+
         <>
+            <h1>{count}</h1>
             <div>
-                <h1>{count}</h1>
-                <div>
-                    <button className={styles.btnStyle}  onClick={() => dispatch(increment())}>Increment</button>
-                    <button className={styles.btnStyle} style={{ marginLeft: 10 }} onClick={() => dispatch(decrement())}>Decrement</button>
-                </div>
+                <button className={styles.btnStyle}  onClick={() => dispatch(increment())}>Increment</button>
+                <button className={styles.btnStyle} style={{ marginLeft: 10 }} onClick={() => dispatch(decrement())}>Decrement</button>
             </div>
         </>
+
     )
 }
 
