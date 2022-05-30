@@ -1,0 +1,27 @@
+.inputStyle{
+    padding : 30px;
+    font-size : 40px;
+    font-weight: bold;
+    width:200px;
+    text-align: center;
+    margin: 30px 60px;
+}
+
+.btnStyle{
+    padding : 30px;
+    font-size : 40px;
+    font-weight: bold;
+}
+
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.labelStyle{
+    font-size:40px;
+    font-weight: bold;
+}

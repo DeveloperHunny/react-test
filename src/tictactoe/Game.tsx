@@ -1,19 +1,17 @@
-import React from 'react';
 import {useSelector} from "react-redux";
 import {RootState} from "../redux/store";
+import TableComponent from "./TableComponent";
 
 const Game = () => {
-    const row = useSelector((state : RootState) => state.tictactoe.row);
-    const col = useSelector((state : RootState) => state.tictactoe.col);
+
+    const turn = useSelector((state : RootState) => state.tictactoe.turn);
 
     return(
-        <table>
-            {Array(row).fill(null).map((elem, index) => {
-
-            })}
-        </table>
+        <>
+            <h1 style={{ marginBottom:60, fontSize:60 }}>TURN : {turn}</h1>
+            <TableComponent/>
+        </>
     )
 }
 
-
-export default Game
+export default Game;

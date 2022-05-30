@@ -18,16 +18,16 @@ const ContentBox:FC<{path : string}> = ({path}) => {
 
 const MainPage = () => {
     return(
-        <Page>
-            <div className={"MainPage"}>
-                <ContentBox path="Counter"/>
-                <ContentBox path="Timer"/>
-                <ContentBox path="TicTacToe"/>
-                <ContentBox path="None"/>
-                <ContentBox path="None"/>
-                <ContentBox path="None"/>
-            </div>
-        </Page>
+
+        <div className={"MainPage"}>
+            <ContentBox path="Counter"/>
+            <ContentBox path="Timer"/>
+            <ContentBox path="TicTacToe"/>
+            <ContentBox path="None"/>
+            <ContentBox path="None"/>
+            <ContentBox path="None"/>
+        </div>
+
 
     )
 }
