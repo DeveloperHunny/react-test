@@ -23,7 +23,7 @@ const MainPage = () => {
             <ContentBox path="Counter"/>
             <ContentBox path="Timer"/>
             <ContentBox path="TicTacToe"/>
-            <ContentBox path="None"/>
+            <ContentBox path="TestPage"/>
             <ContentBox path="None"/>
             <ContentBox path="None"/>
         </div>

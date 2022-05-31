@@ -1,12 +1,13 @@
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
-import NotFoundPage from "./NotFoundPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import React from "react";
 import Counter from "./redux/Counter";
 import Timer from "./redux/Timer";
-import MainPage from "./MainPage";
+import MainPage from "./pages/MainPage";
 import './app.css'
-import Page from "./Page";
+import Page from "./pages/Page";
 import TicTacToe from "./tictactoe/TicTacToe";
+import TestPage from "./pages/TestPage";
 
 
 const Header = () => {
@@ -43,6 +44,7 @@ const App = () => {
                 <Route path="/Counter" element={<Page><Counter/></Page>}/>
                 <Route path="/Timer" element={<Page><Timer/></Page>}/>
                 <Route path="/TicTacToe" element={<Page><TicTacToe/></Page>}/>
+                <Route path="/TestPage" element={<Page><TestPage/></Page>}/>
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
             <hr/>
